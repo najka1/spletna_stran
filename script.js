@@ -557,6 +557,17 @@ const brickWidth3 = 18;
 const brickHeight3 = 18;
 //slike/lego.png
 
+function Pazi() {
+  Swal.fire({
+    title: "Navodila!",
+    text: "Za začetek labirinta klikni na gumb Start. Ob začetku dodaj glas, saj se v ozadju predvaja glasba in boš s tem doživel enkratno izkušnjo!! Sprosti se in uživaj!",
+    imageUrl: "slike/lego.png",
+    imageHeight: 200,
+    imageAlt: "Custom image",
+    confirmButtonColor: 'black'
+  });
+}
+
 function moveImageAlongPath() {
 
   document.getElementById("play").setAttribute("disabled",true);

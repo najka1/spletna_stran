@@ -1,5 +1,7 @@
 body{
     background-image: url(slike/b&w1.png);
+    height: calc(100% - 64px);
+    overflow-y: scroll;
 }
 
 .prvi{
@@ -66,3 +68,36 @@ button{
 	font-size: 40px;
 }
 
+#badge {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    border: solid 2px white;
+    color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 60px;
+    padding: 6px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+#badge:hover, #badge:active {
+    background-color: transparent;
+    color: white;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #badge {
+      display: flex;
+    }
+  }
